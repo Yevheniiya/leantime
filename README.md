@@ -108,3 +108,4 @@ Once started you can go to `<yourdomain.com>/install` and run the installation s
 * Community Forum [https://community.leantime.io](https://community.leantime.io)
 * Discussions on [Discord](https://discord.gg/4zMzJtAq9z)
 * File a bug report [https://github.com/Leantime/leantime/issues/new](https://github.com/Leantime/leantime/issues/new)
+# leantime_practice
