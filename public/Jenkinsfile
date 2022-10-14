@@ -11,7 +11,7 @@ pipeline {
         sh 'ls'
       }
     }
-    stage('hello') {
+    stage('open') {
       steps {
         sh 'cd public'
 	sh 'php index.php'
