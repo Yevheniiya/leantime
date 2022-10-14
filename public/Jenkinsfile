@@ -8,7 +8,7 @@ pipeline {
     }
     stage('hello') {
       steps {
-        sh 'php public/index.php'
+        sh 'php index.php'
       }
     }
   }
