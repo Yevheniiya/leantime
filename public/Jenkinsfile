@@ -14,6 +14,7 @@ pipeline {
     stage('open') {
       steps {
         sh 'cd public'
+	sh 'ls'
 	sh 'php index.php'
       }
     }
