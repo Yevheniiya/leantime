@@ -10,6 +10,11 @@ pipeline {
       steps {
         sh 'ls'
       }
+    stage('hello') {
+      steps {
+        sh 'cd public'
+	sh 'php index.php'
+      }
     }
   }
 }
