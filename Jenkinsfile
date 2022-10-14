@@ -8,7 +8,14 @@ pipeline {
     }
     stage('hello') {
       steps {
-        sh 'php index.php'
+        sh 'ls'
+      }
+    }
+    stage('open') {
+      steps {
+        sh '''cd public 
+	ls
+	php index.php'''
       }
     }
   }
