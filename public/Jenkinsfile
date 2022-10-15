@@ -1,6 +1,6 @@
 
 pipeline {
-  agent { label 'ubuntu-slave' } 
+  node{
   stages {
     stage('verify version') {
       steps {
@@ -20,4 +20,5 @@ pipeline {
       }
     }
   }
+}
 }
