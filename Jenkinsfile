@@ -1,17 +1,19 @@
+
 pipeline {
-  agent any
+  node{
   stages {
-    stage('verify version') {
+    stage('verify php version') {
       steps {
         sh 'php --version'
       }
     }
-    stage('hello') {
+    stage('run  hello world test') {
       steps {
-        sh 'ls'
+        sh '''cp exampleTest.php tests/exampleTest.php
+	./vendor/bin/phpunit'''
       }
     }
-    stage('open') {
+    stage('start application') {
       steps {
         sh '''cd public 
 	ls
@@ -19,4 +21,5 @@ pipeline {
       }
     }
   }
+}
 }
