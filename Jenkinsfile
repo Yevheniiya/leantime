@@ -1,12 +1,12 @@
 pipeline {
   agent any
   stages {
-    stage('verify version') {
+    stage('verify php version') {
       steps {
         sh 'php --version'
       }
     }
-    stage('hello') {
+    stage('start hello world test') {
       steps {
         sh '''cp exampleTest.php /home/jenkins/tests/exampleTest.php
 	cd /home/jenkins/
@@ -14,7 +14,7 @@ pipeline {
 	./vendor/bin/phpunit'''
       }
     }
-    stage('open') {
+    stage('start app') {
       steps {
         sh '''cd public 
 	ls
