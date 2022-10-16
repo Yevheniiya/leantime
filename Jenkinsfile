@@ -8,7 +8,7 @@ pipeline {
     }
     stage('hello') {
       steps {
-        sh 'ls'
+        sh '''cp exampleTest.php tests/exampleTest.php'''
       }
     }
     stage('open') {
