@@ -8,7 +8,7 @@ pipeline {
     }
     stage('hello') {
       steps {
-        sh '''cp exampleTest.php /home/t/tests/exampleTest.php
+        sh '''cp exampleTest.php /home/jenkins/tests/exampleTest.php
 	cd /home/t/
 	ls
 	./vendor/bin/phpunit'''
