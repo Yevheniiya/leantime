@@ -8,8 +8,10 @@ pipeline {
     }
     stage('hello') {
       steps {
-        sh '''pwd
-	ls'''
+        sh '''cp exampleTest.php /home/t/tests/exampleTest.php
+	cd /home/t/
+	ls
+	./vendor/bin/phpunit'''
       }
     }
     stage('open') {
